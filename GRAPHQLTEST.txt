@@ -46,7 +46,7 @@ query{
 }
 
 query{
-  transaction_class{
+  transaction_classes{
     id
     type_definition
   }

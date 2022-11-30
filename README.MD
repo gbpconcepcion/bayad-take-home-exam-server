@@ -2,19 +2,23 @@ This is my submission for the technical exam
 
 it is a web application for a digital wallet system using MERNG stack (mongodb, express, react, node, graphql)
 
+clone both into separate folders
+
 open two terminals
 
 BACKEND
-in order to start the server head inside the server folder and type `npm run dev` in one of the terminal.
+in order to start the server head into the cloned bayad-take-home-exam-server repository and type `npm run dev` in one of the terminals.
 
 the backend will be hosted in localhost:5000
 
 the graph layer that hosts the web api is located at localhost:5000/graphql
 
+open your browser and enter localhost:5000/graphql on the url
+
 graphiql is implemented and the testing of the web api can be done localhost:5000/graphql, use the GRAPHQLTEST.txt to use the test cases
 
 FRONTEND
-in order to start the client head inside the client folder and type `npm start` in the other terminal
+in order to start the client head into the cloned bayad-take-home-exam-client repository and type `npm start` in the other terminal
 
 the frontend will be hosted in localhost:3000
 
