@@ -6,6 +6,8 @@ clone both into separate folders
 
 open two terminals
 
+type `npm install` on both to install dependencies
+
 BACKEND
 in order to start the server head into the cloned bayad-take-home-exam-server repository and type `npm run dev` in one of the terminals.
 
