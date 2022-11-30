@@ -4,11 +4,13 @@ it is a web application for a digital wallet system using MERNG stack (mongodb, 
 
 clone both into separate folders
 
-open two terminals
+open a terminal for each folder
 
 type `npm install` on both to install dependencies
 
+
 BACKEND
+
 in order to start the server head into the cloned bayad-take-home-exam-server repository and type `npm run dev` in one of the terminals.
 
 the backend will be hosted in localhost:5000
@@ -19,7 +21,9 @@ open your browser and enter localhost:5000/graphql on the url
 
 graphiql is implemented and the testing of the web api can be done localhost:5000/graphql, use the GRAPHQLTEST.txt to use the test cases
 
+
 FRONTEND
+
 in order to start the client head into the cloned bayad-take-home-exam-client repository and type `npm start` in the other terminal
 
 the frontend will be hosted in localhost:3000
