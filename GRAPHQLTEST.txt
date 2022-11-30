@@ -1,0 +1,152 @@
+This shows the list of queries and mutations that can be used in GraphiQL in order to test them
+{} denotes that you have to replace the whole bracket with a data type that is described inside the bracket
+
+e.g.
+
+{String} - "Some String"
+{Float} - 1234567890
+{id} - "1234567890abcdef" (ids need to be enclosed with "")
+
+GraphiQL assists the testers with the Document Explorer. It shows the expected input and return type of the query or mutation
+
+
+QUERIES
+query{
+  wallet_users{
+    id
+    username
+    password
+    firstname
+    lastname
+    balance
+  }
+}
+
+
+query{
+  wallet_user(id:{id}){
+    username
+    password
+    id
+    firstname
+    lastname
+    balance
+  }
+}
+
+
+query{
+  wallet_user_history(id:{id}){
+    amount
+    date
+    id
+    status
+    date
+  }
+}
+
+query{
+  transaction_class{
+    id
+    type_definition
+  }
+}
+
+
+query{
+  transaction_class(id:{id}){
+    id
+    type_definition
+  }
+}
+
+query{
+  transaction_class_transactions(id:{id}){
+    amount
+    date
+    id
+    status
+    date
+  }
+}
+
+query{
+  transaction(id:{id}){
+    amount
+    date
+    id
+    status
+    date
+  }
+}
+
+query{
+  transactions{
+    amount
+    date
+    id
+    status
+    date
+  }
+}
+
+
+
+MUTATIONS
+
+duplicate usernames return an error
+mutation{
+  addWalletUser(username:{String}, password:{String}, firstname:{String}, lastname:{String})
+  {
+    response_code
+    response_label
+    response_message
+  }
+}
+
+
+mutation{
+  newAdminPassword(username:{id}, password:{String})
+  {
+    response_code
+    response_label
+    response_message
+  }
+}
+
+mutation{
+  loginWalletUser(username:{String}, password:{String})
+  {
+    response_code
+    response_label
+    response_message
+  }
+}
+
+mutation{
+  addTransactionClass(type_definition:{String})
+  {
+    response_code
+    response_label
+    response_message
+  }
+}
+
+mutation{
+  cashIn(amount:{String},transactor:{id})
+  {
+    response_code
+    response_label
+    response_message
+  }
+}
+
+
+mutation{
+  debit(amount:{Float},transactor:{id},balance:{Float})
+  {
+    response_code
+    response_label
+    response_message
+  }
+}
